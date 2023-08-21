@@ -1,0 +1,190 @@
+
+body {
+    background-color: black;
+}
+
+.UpperSection {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.stepButtons {
+    position: relative;
+    display: flexbox;
+    width: 100%;
+    justify-content: center;
+}
+
+.steps {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 50%;
+}
+
+#outerCircle {
+    height: 70vw;
+    width: 70vw;
+    top: 20vw;
+    left: 15vw; 
+}    
+
+#step1 {
+    left: 40vw;
+    top: 10vw;
+}
+
+#step1:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#step2 {
+
+    right: 6vw;
+    top: 28vw;
+}
+
+#step2:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#step3 {
+
+    right: 6vw;
+    top: 60vw;
+}
+
+#step3:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#step4 {
+
+    left: 40vw;
+    top: 80vw;
+}
+
+#step4:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#step5 {
+
+    left: 12vw;
+    top: 60vw;
+}
+
+#step5:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#step6 {
+    left: 12vw;
+    top: 28vw; 
+}
+
+#step6:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.stepSection {
+    display: grid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid gray;
+    background-color: white;
+    width: 80%;
+    height: 330px;
+    max-width: 85%;
+    overflow-y: scroll;
+    pointer-events: all;
+}
+
+.answerInput {
+    height: 50px;
+    width: 50%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.background.opened {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.closeButton {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   font-size: medium;
+   cursor: pointer;
+}
+
+.stepSections.hidden {
+    display: none;
+}
+
+.step1Section.hidden1 {
+    display: none;
+}
+
+.step2Section.hidden2 {
+    display: none;
+}
+
+.step3Section.hidden3 {
+    display: none;
+}
+
+.step4Section.hidden4 {
+    display: none;
+}
+
+.step5Section.hidden5 {
+    display: none;
+}
+
+.step6Section.hidden6 {
+    display: none;
+}
+
+.Videos {
+    border-top: solid black;
+}
+
+.Notes {
+    border-top: solid black;
+}
+
+.stepHeader {
+    text-align: center;
+    font-size: x-large;
+}
+
+
+
+

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftwareMadeEasy.com</title>
+</head>
+
+<body>
+  <div class="background">
+    <!--This is the main section of the html file-->
+    <section class="UpperSection">
+
+        <h1>Keep track of your software development process and
+         build software easily.</h1>
+        <h2>Start developing by choosing the right phase</h2>
+        <!--This button is used for test purposes. It will get all notes in the database and display
+        it in the console-->
+        <button id="getNotesButton">GET NOTES</button>
+        <!--This button is used for test purposes. It will get all answers in the database and display
+        it in the console-->
+        <button id="getAnswersButton">GET ANSWERS</button>
+        <!--This element contains all step buttons-->
+        <div class="stepButtons">
+            <button class="steps" id="outerCircle">CHOOSE A STEP</button>
+            <button class="steps" id="step1">Step 1: Planning</button>
+            <button class="steps" id="step2">Step 2: Analysis</button>
+            <button class="steps" id="step3">Step 3: Design</button>
+            <button class="steps" id="step4">Step 4: Implementation</button>
+            <button class="steps" id="step5">Step 5: Testing</button>
+            <button class="steps" id="step6">Step 6: Deployment & Maintenance</button>
+        </div>
+
+    </section>
+    <!--This section contains all step sections which a user can interact with and contains two
+    classes stepSections and hidden-->
+    <section class="stepSections hidden">
+      <div class="background opened">
+        <!--This section is the element which contains questions, videos and notes for step 1-->
+        <section class="step1Section stepSection hidden1">
+            <!--This is the close button to close the section-->
+            <button class="closeButton" id="close1">&times;</button>
+            <!--This is the header which indicates the step-->
+            <h1 class="stepHeader">STEP 1</h1>
+            <!--This element contains all questions for step 1 -->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+                <!--Each div element contains questions, input which allows users to enter an answer
+                and a save button to save the answer in the database-->
+                <div class="question1-1">
+                 <h3>What is the purpose of the software?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="1">
+                 </textarea>
+                 <button class="answerButton">SAVE ANSWER</button>
+                </div>
+
+                <div class="question1-2">
+                 <h3>What is the required time and budget for this project?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="2">
+                 </textarea>
+                 <button class="answerButton">SAVE ANSWER</button>
+                </div>
+
+                <div class="question1-3">
+                 <h3>What resources are available for this project?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="3">
+                 </textarea>
+                 <button class="answerButton">SAVE ANSWER</button>
+                </div>
+
+                <div class="question1-4">
+                 <h3>What are the agreed-upon requirements for the project?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="4">
+                 </textarea>
+                 <button class="answerButton" id="4">SAVE ANSWER</button>
+                </div>
+    
+            </div>
+            <!--This element contains all videos for step 1-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <!--Each element has a link to a video-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fi3_BjVzpqk"
+                 title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                   gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i-QyW8D3ei0" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gNmrGZSGK1k" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 1-->
+            <div class="Notes" id="step1Notes">
+                <h2>Your Notes</h2>
+                <!--This button is for creating a new note and adding it to this div element-->
+                <button class="addNoteButton" id="1">ADD NOTE</button>
+            </div>
+    
+        </section>
+
+        <!--This section is the element which contains questions, videos and notes for step 2-->
+        <section class="step2Section stepSection hidden2">
+           
+            <button class="closeButton" id="close2">&times;</button>
+            <h1 class="stepHeader">STEP 2</h1>
+            <!--This element contains all questions for step 2 -->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+
+                <div class="question2-1">
+                 <h3>What methods or techniques are used to analyze and validate requirements?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="5">
+                 </textarea>
+                 <button class="answerButton" id="5">SAVE ANSWER</button>
+                </div>
+
+                <div class="question2-2">
+                 <h3>What are the risks involved with this project?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="6">
+                 </textarea>
+                 <button class="answerButton" id="6">SAVE ANSWER</button>
+                </div>
+
+                <div class="question2-3">
+                 <h3>What is included in the software requirements specification?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="7">
+                 </textarea>
+                 <button class="answerButton" id=7>SAVE ANSWER</button>
+                </div>
+    
+            </div>
+             <!--This element contains all videos for step 2-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Fi3_BjVzpqk?start=107" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/i-QyW8D3ei0?start=61" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gNmrGZSGK1k?start=131" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PtJmjPkrSUE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 2-->
+            <div class="Notes" id="step2Notes">
+                <h2>Your Notes</h2>
+                <button class="addNoteButton" id="2">ADD NOTE</button>
+            </div>
+    
+        </section>
+
+        <!--This section is the element which contains questions, videos and notes for step 3-->
+        <section class="step3Section stepSection hidden3">
+    
+            <button class="closeButton" id="close3">&times;</button>
+            <h1 class="stepHeader">STEP 3</h1>
+             <!--This element contains all questions for step 3-->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+
+                <div class="question3-1">
+                 <h3>How is the software architecture going to be designed?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="8">
+                 </textarea>
+                 <button class="answerButton" id="8">SAVE ANSWER</button>
+                </div>
+
+                <div class="question3-2">
+                 <h3>How are the requirements going to be implemented?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="9">
+                 </textarea>
+                 <button class="answerButton" id="9">SAVE ANSWER</button>
+                </div>
+
+                <div class="question3-3">
+                 <h3>What tools are going to be used to implement requirements?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="10">
+                 </textarea>
+                 <button class="answerButton" id="10">SAVE ANSWER</button>
+                </div>
+
+                <div class="question3-4">
+                 <h3>What is included in the software design document?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="11">
+                 </textarea>
+                 <button class="answerButton" id="11">SAVE ANSWER</button>
+                </div>
+
+            </div>
+            <!--This element contains all videos for step 3-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Fi3_BjVzpqk?start=136" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/i-QyW8D3ei0?start=214" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gNmrGZSGK1k?start=194" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6QsSuQPxunk" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 3-->
+            <div class="Notes" id="step3Notes">
+                <h2>Your Notes</h2>
+                <button class="addNoteButton" id="3">ADD NOTE</button>
+            </div>
+    
+        </section>
+
+        <!--This section is the element which contains questions, videos and notes for step 4-->
+        <section class="step4Section stepSection hidden4">
+    
+            <button class="closeButton" id="close4">&times;</button>
+            <h1 class="stepHeader">STEP 4</h1>
+             <!--This element contains all questions for step 4-->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+
+                <div class="question4-1">
+                 <h3>Which functions or methods will be used to code the software?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="12">
+                 </textarea>
+                 <button class="answerButton" id="12">SAVE ANSWER</button>
+                </div>
+
+                <div class="question4-2">
+                 <h3>How is your code going to be organised?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="13">
+                 </textarea>
+                 <button class="answerButton" id="13">SAVE ANSWER</button>
+                </div>
+
+                <div class="question4-3">
+                 <h3>How can you improve your code so that it consumes less space in memory?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="14">
+                 </textarea>
+                 <button class="answerButton" id="14">SAVE ANSWER</button>
+                </div>
+
+            </div>
+            <!--This element contains all videos for step 4-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Fi3_BjVzpqk?start=166" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/i-QyW8D3ei0?start=261" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gNmrGZSGK1k?start=256" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 4-->
+            <div class="Notes" id="step4Notes">
+                <h2>Your Notes</h2>
+                <button class="addNoteButton" id="4">ADD NOTE</button>
+                <button id="getNotesButton">GET NOTES</button>
+            </div>
+    
+        </section>
+        <!--This section is the element which contains questions, videos and notes for step 5-->
+        <section class="step5Section stepSection hidden5">
+    
+            <button class="closeButton" id="close5">&times;</button>
+            <h1 class="stepHeader">STEP 5</h1>
+             <!--This element contains all questions for step 5-->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+
+                <div class="question5-1">
+                 <h3>What defects or bugs are found in the system?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="15">
+                 </textarea>
+                 <button class="answerButton" id="15">SAVE ANSWER</button>
+                </div>
+
+                <div class="question5-2">
+                 <h3>How are the bugs going to be fixed?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="16">
+                 </textarea>
+                 <button class="answerButton" id="16">SAVE ANSWER</button>
+                </div>
+
+                <div class="question5-3">
+                 <h3>What test cases are going to be designed to check
+                 functionality and security of the software?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="17">
+                 </textarea>
+                 <button class="answerButton" id="17">SAVE ANSWER</button>
+                </div>
+
+            </div>
+             <!--This element contains all videos for step 5-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Fi3_BjVzpqk?start=194" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/i-QyW8D3ei0?start=308" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gNmrGZSGK1k?start=322" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 5-->
+            <div class="Notes" id="step5Notes">
+                <h2>Your Notes</h2>
+                <button class="addNoteButton" id="5">ADD NOTE</button>
+            </div>
+    
+        </section>
+        <!--This section is the element which contains questions, videos and notes for step 6-->
+        <section class="step6Section stepSection hidden6">
+    
+            <button class="closeButton" id="close6">&times;</button>
+            <h1 class="stepHeader">STEP 6</h1>
+             <!--This element contains all questions for step 6-->
+            <div class="Questions">
+                <h2>Some Important Questions To Answer:</h2>
+                 
+                <div class="question6-1">
+                 <h3>Where is the software going to be deployed?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="18">
+                 </textarea>
+                 <button class="answerButton" id="18">SAVE ANSWER</button>
+                </div>
+
+                <div class="question6-2">
+                 <h3>How can users report any issues they encounter?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="19">
+                 </textarea>
+                 <button class="answerButton" id="19">SAVE ANSWER</button>
+                </div>
+
+                <div class="question6-3">
+                 <h3>What updates will be released to fix issues?</h3>
+                 <textarea type="text" placeholder="Type Your Answer Here" class="answerInput" id="20">
+                 </textarea>
+                 <button class="answerButton" id="20">SAVE ANSWER</button>
+                </div>
+
+            </div>
+            <!--This element contains all videos for step 6-->
+            <div class="Videos">
+                <h2>Useful Videos</h2>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Fi3_BjVzpqk?start=227" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/i-QyW8D3ei0?start=425" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gNmrGZSGK1k?start=418" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+            <!--This element contains all the notes for step 6-->
+            <div class="Notes" id="step6Notes">
+                <h2>Your Notes</h2>
+                <button class="addNoteButton" id="6">ADD NOTE</button>
+            </div>
+    
+        </section>
+      </div>
+    </section>    
+  </div>  
+</body>
+</html>
+<!--This integrates the css file into this html file to style the web app-->
+<link rel="stylesheet" href="AppStyle.css">
+<!--This integrates the javascript file into this html file to add functionality to the web app-->
+<script src="AppFunction.js"></script>
